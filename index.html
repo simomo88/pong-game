@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA World Cup Pong</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⚽ FIFA WORLD CUP PONG ⚽</h1>
+            <p class="tagline">Battle for the Trophy</p>
+        </div>
+        
+        <div class="scoreboard">
+            <div class="score-section team-left">
+                <div class="team-flag">🇦🇷</div>
+                <p class="team-name" id="leftTeam">ARGENTINA</p>
+                <p class="score" id="playerScore">0</p>
+                <p class="goals-text">GOALS</p>
+            </div>
+            
+            <div class="trophy-section">
+                <div class="trophy">🏆</div>
+                <p class="vs-text">VS</p>
+            </div>
+            
+            <div class="score-section team-right">
+                <div class="team-flag">🇫🇷</div>
+                <p class="team-name" id="rightTeam">FRANCE</p>
+                <p class="score" id="computerScore">0</p>
+                <p class="goals-text">GOALS</p>
+            </div>
+        </div>
+        
+        <div class="stadium">
+            <canvas id="gameCanvas" width="1000" height="500"></canvas>
+        </div>
+        
+        <div class="controls">
+            <p><strong>⚙️ CONTROLS:</strong></p>
+            <p>🖱️ Move Mouse - Control Left Paddle (Defender)</p>
+            <p>⬆️⬇️ Arrow Keys - Move Left Paddle</p>
+            <p>R - Reset Game | SPACE - Pause/Resume</p>
+        </div>
+        
+        <div class="match-info" id="matchInfo">
+            <p>🏟️ WORLD CUP FINAL</p>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
